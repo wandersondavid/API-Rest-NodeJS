@@ -6,11 +6,12 @@ const app = express()
 app.use(boyParser.json())
 app.use(boyParser.urlencoded({extended: false}))
 
-app.get('/', (req,res)=>{
+// app.get('/', (req,res)=>{
 
-    res.send('Hello word!')
+//     res.send('Hello word!')
 
 
-})
+// })
+require('./controllers/authController')(app)
 
 app.listen(3000)
