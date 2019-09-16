@@ -1,10 +1,10 @@
-const express = require('express')
-const boyParser =  require('body-parser')
+const express = require('express');
+const bodyParser =  require('body-parser');
 
-const app = express()
+const app = express();
 
-app.use(boyParser.json())
-app.use(boyParser.urlencoded({extended: false}))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
 // app.get('/', (req,res)=>{
 
@@ -12,6 +12,6 @@ app.use(boyParser.urlencoded({extended: false}))
 
 
 // })
-require('./controllers/authController')(app)
+require('./controllers/authController')(app);
 
-app.listen(3000)
+app.listen(3000);
