@@ -1,2 +1,2 @@
 # API-Rest-NodeJS
-api para teste 
+Projeto quando estava iniciando o estudo em node js
